@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:background="@drawable/list_gray_item"
+        android:id="@+id/tv_title"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="搜索企业"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"/>
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        />
+</LinearLayout>

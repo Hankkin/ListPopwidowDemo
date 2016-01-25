@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_bottom"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_above="@+id/view_line1"
+        android:background="@drawable/round_half_top"
+        android:id="@+id/tv_popwindow_first"
+        android:textSize="13sp"
+        android:textColor="@color/grey"
+        android:text="关联申请"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"/>
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_above="@+id/lv_popwindow"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ListView
+        android:listSelector="@color/transparent"
+        android:divider="@null"
+        android:layout_above="@+id/view_line"
+        android:id="@+id/lv_popwindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_above="@+id/tv_popwindow_bottom"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/item_selector"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_popwindow_bottom"
+        android:textSize="15sp"
+        android:textColor="@color/skyblue"
+        android:text="关联申请"
+        android:gravity="center"
+        android:padding="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="39dp"/>
+
+</RelativeLayout>
