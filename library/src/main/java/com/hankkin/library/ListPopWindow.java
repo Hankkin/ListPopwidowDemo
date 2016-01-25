@@ -19,16 +19,16 @@ import java.util.List;
  */
 public class ListPopWindow extends PopupWindow{
 
-    private Context context;
-    private View parentView;
-    private List<PopBean> dataList;
-    private OnPopItemClickListener listener;
-    private ListView lv;
-    private View viewTop;
-    private String topText,bottomText;
-    private TextView tvTop,tvBottom;
-    private PopWindowAdapter adapter;
-    private OnBottomTextviewClickListener bottomListener;
+    private Context context;        //上下文
+    private View parentView;        //父视图
+    private List<PopBean> dataList; //item数据源
+    private OnPopItemClickListener listener;    //item点击接口
+    private ListView lv;    //item列表视图
+    private View viewTop;   //title视图
+    private String topText,bottomText;  //title文字，bottom文字
+    private TextView tvTop,tvBottom;    //title文本，bottom文本
+    private PopWindowAdapter adapter;   //适配器
+    private OnBottomTextviewClickListener bottomListener;//底部点击接口
 
 
     public interface  OnPopItemClickListener{
@@ -85,7 +85,7 @@ public class ListPopWindow extends PopupWindow{
         viewTop = parentView.findViewById(R.id.view_line1);
         tvBottom = (TextView) parentView.findViewById(R.id.tv_popwindow_bottom);
         tvTop = (TextView) parentView.findViewById(R.id.tv_popwindow_first);
-        adapter = new PopWindowAdapter(context,dataList);
+        adapter = new PopWindowAdapter(context,dataList,false);
         lv.setAdapter(adapter);
 
         if (!TextUtils.isEmpty(topText)){
